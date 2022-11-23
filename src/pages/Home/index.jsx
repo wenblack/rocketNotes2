@@ -1,4 +1,4 @@
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiSearch } from "react-icons/fi";
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles";
 
 import { Header } from "../../components/Header";
@@ -30,7 +30,7 @@ export function Home() {
       </Menu>
 
       <Search>
-        <Input placeholder="Pesquisar pelo título" />
+        <Input placeholder="Pesquisar pelo título" icon={FiSearch} />
       </Search>
 
       <Content>
@@ -40,8 +40,8 @@ export function Home() {
               title: "React",
               tags: [
                 { id: "1", name: "react" },
-                { id: "2", name: "rocketseat" },
-              ],
+                { id: "2", name: "rocketseat" }
+              ]
             }}
           />
         </Section>
